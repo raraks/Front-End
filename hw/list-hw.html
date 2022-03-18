@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Списки</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabriela&family=Marck+Script&family=Pattaya&family=Podkova&display=swap"
+        rel="stylesheet">
+    <style>
+        p {
+            color: rgb(228, 102, 245);
+            font-family: 'Podkova', serif;
+            text-align: justify;
+            text-indent: 24px;
+            text-shadow: rgb(165, 69, 173) 2px -2px;
+            font-size: 50px;
+        }
+
+        ul,
+        ol {
+            color: rgb(140, 0, 255);
+            font-size: 24px;
+        }
+
+        ol {
+            margin-left: 50px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .one {
+            list-style: none;
+        }
+
+        .one li::before {
+            content: "\221E";
+            margin: 10px;
+        }
+
+        .two {
+            list-style: none;
+        }
+
+        .two li::before {
+            content: "\2711";
+            margin: 10px;
+        }
+
+        .three {
+            list-style: none;
+        }
+
+        .three li::before {
+            content: "\262D";
+            margin: 10px;
+        }
+
+        .four {
+            list-style: none;
+        }
+
+        .four li::before {
+            content: "\2643";
+            margin: 10px;
+        }
+
+        .none {
+            list-style: none;
+        }
+
+        .five {
+            list-style: none;
+        }
+
+        .five li::before {
+            content: "\265A";
+            margin: 10px;
+        }
+
+        .six {
+            list-style: none;
+        }
+
+        .six li::before {
+            content: "\2667";
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Список форбс</p>
+    <ol style="list-style-type: decimal-leading-zero;">
+        <li>Джефф Безос</li>
+        <li>Илон Маск</li>
+        <li>Бернар Арно</li>
+        <li>Билл Гейтс</li>
+        <li>Марк Цукерберг</li>
+    </ol>
+    <hr>
+    <ol style="list-style-type: initial;">
+        <li>Джефф Безос</li>
+        <li>Илон Маск</li>
+        <li>Бернар Арно</li>
+        <li>Билл Гейтс</li>
+        <li>Марк Цукерберг</li>
+    </ol>
+    <hr>
+    <ol class="one">
+        <li>Джефф Безос</li>
+        <li>Илон Маск</li>
+        <li>Бернар Арно</li>
+        <li>Билл Гейтс</li>
+        <li>Марк Цукерберг</li>
+    </ol>
+    <hr>
+    <ol class="two">
+        <li>Джефф Безос</li>
+        <li>Илон Маск</li>
+        <li>Бернар Арно</li>
+        <li>Билл Гейтс</li>
+        <li>Марк Цукерберг</li>
+    </ol>
+    <hr>
+    <ol class="three">
+        <li>Джефф Безос</li>
+        <li>Илон Маск</li>
+        <li>Бернар Арно</li>
+        <li>Билл Гейтс</li>
+        <li>Марк Цукерберг</li>
+    </ol>
+    <hr>
+    <ol class="four">
+        <li>Джефф Безос</li>
+        <li>Илон Маск</li>
+        <li>Бернар Арно</li>
+        <li>Билл Гейтс</li>
+        <li>Марк Цукерберг</li>
+    </ol>
+    <p>Список президентов Украины</p>
+    <ol class="five">
+        <li>Леонид Макарович Кравчук</li>
+        <li>Леонид Данилович Кучма</li>
+        <li>Виктор Андреевич Ющенко</li>
+        <li>Виктор Фёдорович Янукович</li>
+        <li>Александр Валентинович Турчинов
+        <li>Пётр Алексеевич Порошенко</li>
+        <li>Владимир Александрович Зеленский</li>
+    </ol>
+    <hr>
+    <ol class="six">
+        <li>Леонид Макарович Кравчук</li>
+        <li>Леонид Данилович Кучма</li>
+        <li>Виктор Андреевич Ющенко</li>
+        <li>Виктор Фёдорович Янукович</li>
+        <li>Александр Валентинович Турчинов
+        <li>Пётр Алексеевич Порошенко</li>
+        <li>Владимир Александрович Зеленский</li>
+    </ol>
+</body>
+
+</html>
