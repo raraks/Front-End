@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки</title>
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!--Custom styles for this template -->
+    <link href="http://designify.me/code-snippets/animated-buttons/css/btns.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabriela&family=Marck+Script&family=Pattaya&family=Podkova&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .l {
+        height: 100px
+    }
+
+    @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+    body {
+        background-image: url(https://images4.alphacoders.com/987/thumb-1920-987919.jpg);
+        background-size: cover;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: 'Open Sans Condensed', sans-serif;
+        background-attachment: fixed;
+    }
+
+    div{
+        float: left;
+    }
+
+    /* */
+
+    .btn-one {
+        color: #FFF;
+        transition: all 0.3s;
+        position: relative;
+    }
+
+    .btn-one span {
+        transition: all 0.3s;
+    }
+
+    .btn-one::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.3s;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-top-color: rgba(14, 13, 13, 0.199);
+        border-bottom-color: rgba(14, 13, 13, 0.199);
+        transform: scale(0.1, 1);
+    }
+
+    .btn-one:hover span {
+        letter-spacing: 2px;
+    }
+
+    .btn-one:hover::before {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    .btn-one::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.3s;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-one:hover::after {
+        opacity: 0;
+        transform: scale(0.1, 1);
+    }
+
+    /*div[class*=box] {
+        height: 33.33%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }*/
+
+    .box-1 {
+        background-color: #FF6766;
+    }
+
+    .box-2 {
+        background-color: #000000;
+    }
+
+    .box-3 {
+        background-color: #66A182;
+    }
+
+    .btn {
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+        width: 250px;
+        cursor: pointer;
+    }
+
+    
+
+    @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+    .container {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 300px;
+        /*top: 50%;*/
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center {
+        width: 180px;
+        height: 60px;
+        position: absolute;
+    }
+
+    .btn1 {
+        width: 180px;
+        height: 60px;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #91C9FF;
+        outline: none;
+        transition: 1s ease-in-out;
+    }
+
+    svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: none;
+        stroke: #fff;
+        stroke-dasharray: 150 480;
+        stroke-dashoffset: 150;
+        transition: 1s ease-in-out;
+    }
+
+    .btn1:hover {
+        transition: 1s ease-in-out;
+        /*background: #4F95DA;*/
+    }
+
+    * .btn1:hover svg {
+        stroke-dashoffset: -480;
+    }
+
+    .btn1 span {
+        color: white;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    
+
+    .btn-three {
+        color: #FFF;
+        transition: all 0.5s;
+        position: relative;
+    }
+
+    .btn-three::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: all 0.3s;
+    }
+
+    .btn-three:hover::before {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+
+    .btn-three::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.3s;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transform: scale(1.2, 1.2);
+    }
+
+    .btn-three:hover::after {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    
+
+    .gradient-button {
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        padding: 20px 30px;
+        margin: 10px 20px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+        background-size: 200% auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+        transition: .5s;
+        width: 600px;
+        text-align: center;
+    }
+
+    .gradient-button:hover {
+        background-position: right center;
+    }
+
+    
+
+    .border-button {
+        text-decoration: none;
+        display: inline-block;
+        padding: 20px 30px;
+        margin: 10px 20px;
+        position: relative;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, .4);
+        background: none;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .border-button:before,
+    .border-button:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+
+    .border-button:before {
+        bottom: 0;
+        left: 0;
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+        transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+    }
+
+    .border-button:after {
+        top: 0;
+        right: 0;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+    }
+
+    .border-button:hover:before,
+    .border-button:hover:after {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+
+    .border-button:hover:before {
+        transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    }
+
+    .border-button:hover:after {
+        transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+    }
+
+    .border-button:hover {
+        background: rgba(255, 255, 255, .2);
+    }
+
+    .floating-button {
+        text-decoration: none;
+        display: inline-block;
+        width: 140px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 45px;
+        margin: 10px 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: 600;
+        color: #524f4e;
+        background: white;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+        transition: .3s;
+    }
+
+    .floating-button:hover {
+        background: #2EE59D;
+        box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+        color: white;
+        transform: translateY(-7px);
+    }
+
+    .sliding-button {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        position: relative;
+        padding: 15px 30px;
+        border: 1px solid;
+        border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+        border-image-slice: 1;
+        margin: 10px 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        overflow: hidden;
+        letter-spacing: 2px;
+        transition: .8s cubic-bezier(.165, .84, .44, 1);
+    }
+
+    .sliding-button:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        z-index: -1;
+        color: white;
+        background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+        transition: .8s cubic-bezier(.165, .84, .44, 1);
+    }
+
+    .sliding-button:hover {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    .sliding-button:hover:before {
+        bottom: 0%;
+        top: auto;
+        height: 100%;
+    }
+
+    .shine-button {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 30px;
+        margin: 10px 20px;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid #fe6637;
+        border-radius: 8px;
+        font-family: 'Montserrat', sans-serif;
+        color: #fe6637;
+        transition: .2s ease-in-out;
+    }
+
+    .shine-button:before {
+        content: "";
+        background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: -8px;
+        left: -75px;
+        transform: skewX(-45deg);
+    }
+
+    .shine-button:hover {
+        background: #fe6637;
+        color: #fff;
+    }
+
+    .shine-button:hover:before {
+        left: 100%;
+        transition: .6s ease-in-out;
+    }
+
+    .glow-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: .15s ease-in-out;
+}
+.glow-button:hover {
+  box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+  color: #F137A6;
+}
+</style>
+
+<body>
+
+
+    <div class="container">
+        <a href="base.html" class="center" target="_blank">
+            <button class="btn1">
+                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line">
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line">
+                </svg>
+                <span>Тема 1, урок 1</span>
+            </button>
+        </a>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div
+        style="width: 600px; height: 180px; font-size: 20px; color: #ffffff; text-shadow: 5px 5px 5px rgb(78, 0, 114); text-align: center;">
+        <p>В этом уроке мы разбирали базовые теги как:
+        <ol>
+            <li>&lt;p&gt;</li>
+            <li>&lt;hr&gt;</li>
+        </ol>
+        <br>
+        <p>Стили CSS
+        <ol>
+            <li>background-color</li>
+            <li>color</li>
+            <li>font-size</li>
+        </ol>
+        </p>
+        </p>
+    </div>
+    <p class="l"></p>
+    <div class="box-1"
+        style="width: 600px; height: 50px; font-size: 20px; color: #ffffff; text-shadow: 5px 5px 5px rgb(78, 0, 114); text-align: center;">
+        <a href="gradient.html" class="btn btn-one" target="_blank">
+            <span>Тема 2, урок 2</span>
+        </a>
+        <p>В этом уроке мы разбирали базовые теги как:
+        <ol>
+            <li>&lt;div&gt;</li>
+        </ol>
+        <br>
+        <p>Стили CSS
+        <ol>
+            <li>background</li>
+            <li>linear-gradient</li>
+            <li>radial-gradient</li>
+            <li>repeating-linear-gradient</li>
+            <li>repeating-radial-gradient</li>
+        </ol>
+        </p>
+        </p>
+    </div>
+    <br>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p class="l"></p>
+    <div class="box-3"
+        style="width: 600px; height: 50px; font-size: 20px; color: #ffffff; text-shadow: 5px 5px 5px rgb(78, 0, 114); text-align: center;">
+        <a href="image.html" class="btn btn-three" target="_blank">
+            <span>Тема 3, урок 1</span>
+        </a>
+        <p>В этом уроке мы разбирали базовые теги как:
+        <ol>
+            <li>&lt;img&gt;</li>
+        </ol>
+        <br>
+        <p>Стили CSS
+        <ol>
+            <li>background-image</li>
+            <li>background-size</li>
+            <li>background-repeat</li>
+            <li>background-attachment</li>
+            <li>alt</li>
+            <li>title</li>
+        </ol>
+        </p>
+        </p>
+    </div>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p class="l"></p>
+    <a href="line.html" class="gradient-button" target="_blank"><span>Тема 4, урок 1</span></a>
+    <div
+        style="font-family: 'Open Sans Condensed'; font-style: normal; width: 600px; height: 50px; font-size: 23px; color: #ffffff; text-shadow: 5px 5px 5px rgb(78, 0, 114); text-align: center;">
+        <p>В этом уроке мы разбирали базовые теги как:
+        <ol>
+            <li>&lt;marquee&gt;</li>
+        </ol>
+        <br>
+        <p>Стили CSS
+        <ol>
+            <li>direction</li>
+            <li>behavior</li>
+        </ol>
+        </p>
+        </p>
+    </div>
+    <p class="l"></p>
+    <p class="l"></p>
+    <div
+        style="font-family: 'Open Sans Condensed'; font-style: normal; width: 600px; height: 50px; font-size: 23px; color: #ffffff; text-shadow: 5px 5px 5px rgb(78, 0, 114); text-align: center;">
+        <a href="format.html" class="border-button" style="width: 100%;" target="_blank">Тема 5, урок 1</a>
+        <p>В этом уроке мы разбирали базовые теги как:
+        <ol>
+            <li>&lt;b&gt;</li>
+            <li>&lt;sub&gt;</li>
+            <li>&lt;sup&gt;</li>
+        </ol>
+        <br>
+        <p>Стили CSS
+        <ol>
+            <li>font-family</li>
+            <li>text-shadow</li>
+            <li>text-decoration</li>
+            <li>text-decoration-style</li>
+            <li>text-decoration-color</li>
+            <li>text-underline-position</li>
+        </ol>
+        </p>
+        </p>
+    </div>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div
+        style="font-family: 'Open Sans Condensed'; font-style: normal; width: 600px; height: 50px; font-size: 23px; color: #ffffff; text-shadow: 5px 5px 5px rgb(78, 0, 114); text-align: center;">
+        <a href="header.html" class="floating-button" style="width: 100%;" target="_blank">Тема 6, урок 1</a>
+        <p>В этом уроке мы разбирали базовые теги как:
+        <ol>
+            <li>&lt;h1&gt;</li>
+            <li>&lt;h2&gt;</li>
+            <li>&lt;h3&gt;</li>
+            <li>&lt;span&gt;</li>
+        </ol>
+        <br>
+        <p>Стили CSS
+        <ol>
+            <li>text-align</li>
+            <li>text-indent</li>
+        </ol>
+        </p>
+        </p>
+    </div>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div
+        style="font-family: 'Open Sans Condensed'; font-style: normal; width: 600px; height: 50px; font-size: 23px; color: #ffffff; text-shadow: 5px 5px 5px rgb(78, 0, 114); text-align: center;">
+        <a href="format.html" class="sliding-button" style="width: 100%;" target="_blank">Тема 6, урок 2</a>
+        <p>В этом уроке мы разбирали базовые теги как:
+        <ol>
+            <li>&lt;ul&gt;</li>
+            <li>&lt;ol&gt;</li>
+            <li>&lt;li&gt;</li>
+        </ol>
+        <br>
+        <p>Стили CSS
+        <ol>
+            <li>list-style-type</li>
+        </ol>
+        </p>
+        </p>
+    </div>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p></p>
+    <div
+        style="font-family: 'Open Sans Condensed'; font-style: normal; width: 600px; height: 50px; font-size: 23px; color: #ffffff; text-shadow: 5px 5px 5px rgb(78, 0, 114); text-align: center;">
+        <a href="tables.html" class="shine-button" style="width: 100%; height: 45px;" target="_blank">Тема 7, урок 1</a>
+        <p>В этом уроке мы разбирали базовые теги как:
+        <ol>
+            <li>&lt;table&gt;</li>
+            <li>&lt;caption&gt;</li>
+            <li>&lt;tr&gt;</li>
+            <li>&lt;th&gt;</li>
+            <li>&lt;td&gt;</li>
+        </ol>
+        <br>
+        <p>Стили CSS
+        <ol>
+            <li>font-weight</li>
+        </ol>
+        </p>
+        </p>
+    </div>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p class="l"></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div
+    style="font-family: 'Open Sans Condensed'; font-style: normal; width: 600px; height: 50px; font-size: 23px; color: #ffffff; text-shadow: 5px 5px 5px rgb(78, 0, 114); text-align: center;">
+    <a href="link.html" class="glow-button" style="width: 100%; height: 45px;" target="_blank">Тема 7, урок 2</a>
+    <p>В этом уроке мы разбирали базовые теги как:
+    <ol>
+        <li>&lt;a&gt;</li>
+        <li>&lt;link&gt;</li>
+    </ol>
+    <br>
+    <p>Стили CSS
+    <ol>
+        <li>target</li>
+    </ol>
+    </p>
+    </p>
+</div>
+    
+</body>
+
+</html>
