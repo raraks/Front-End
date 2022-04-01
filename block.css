@@ -1,0 +1,48 @@
+body{
+    background-image: url(https://images3.alphacoders.com/879/thumb-1920-879383.jpg);
+    background-size: cover;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    border: solid 5px black;
+    margin: 50px;
+}
+
+.third,
+.four{
+    width: 700px;
+    height: 75px;
+    background-image: url(https://media.istockphoto.com/vectors/abstract-blurred-colorful-background-vector-id1248542684?k=20&m=1248542684&s=612x612&w=0&h=1yKiRrtPhiqUJXS_yJDwMGVHVkYRk2pJX4PG3TT4ZYM=);
+    background-size: cover;
+}
+
+.first {
+    border: double 7px purple;
+    background-image: url(https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg);
+}
+
+.second {
+    border: dotted 7px black;
+    background-image: url(https://www.nipponexpress.com/press/report/img/06-Nov-20-ogp.jpeg);
+    background-size: cover;
+}
+
+.a_f {
+    border: solid black;
+    width: 350px;
+    height: 350px;
+}
+
+.b_in {
+    border: dashed black;
+    width: 250px;
+    height: 250px;
+}
+
+.c_in {
+    border: groove black;
+    width: 150px;
+    height: 150px;
+}
