@@ -46,3 +46,7 @@ div {
     width: 150px;
     height: 150px;
 }
+
+.b_r {
+    border-radius: 20px;
+}
