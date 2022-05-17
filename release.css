@@ -1,0 +1,162 @@
+body {
+    background-image: url(https://funart.pro/uploads/posts/2021-04/thumbs/1618606311_49-funart_pro-p-oboi-fon-anime-sakura-derevo-50.jpg);
+    background-size: cover;
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+    border: dotted purple;
+}
+
+.menu {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    float: left;
+    color: white;
+}
+
+.content {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.384);
+    float: left;
+    color: white;
+}
+
+footer {
+    clear: both;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: white;
+    border: dotted purple;
+    text-align: right;
+}
+
+.prom {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.hr {
+    width: 99%;
+    height: 2px;
+    background-color: aliceblue;
+}
+
+p {
+    font-size: 28px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+  text-shadow: 2px 2px 3px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
+
+.center {
+  text-align: center;
+}
+
+/* */
+
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  a.animated-button:link:after, a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+  }
+  a.animated-button:link:hover, a.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+  }
+  a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+    height: 450%;
+  }
+  a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+a.animated-button.thar-three {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    width: 400px;
+  }
+  a.animated-button.thar-three:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: nthree;
+  }
+  a.animated-button.thar-three:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+  }
+  a.animated-button.thar-three:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  }
